@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPZ_Lab03DBF", "KPZ_Lab03DBF.csproj", "{5B109189-F31A-442F-ADD6-EEC6373CFE94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KPZ_Lab03CF", "..\KPZ_Lab03CF\KPZ_Lab03CF.csproj", "{14EE62E2-EB59-40F7-99FA-B502F657E3EE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5B109189-F31A-442F-ADD6-EEC6373CFE94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B109189-F31A-442F-ADD6-EEC6373CFE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B109189-F31A-442F-ADD6-EEC6373CFE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B109189-F31A-442F-ADD6-EEC6373CFE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14EE62E2-EB59-40F7-99FA-B502F657E3EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14EE62E2-EB59-40F7-99FA-B502F657E3EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14EE62E2-EB59-40F7-99FA-B502F657E3EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14EE62E2-EB59-40F7-99FA-B502F657E3EE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2E3A26FB-D400-4912-BDF7-A62ECE862BCF}
+	EndGlobalSection
+EndGlobal
