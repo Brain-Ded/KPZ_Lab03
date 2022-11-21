@@ -13,31 +13,29 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace KPZ_Lab03DBF
+namespace KPZ_Lab03CF
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    ///
     public partial class MainWindow : Window
     {
-        KPZ_Lab03DBEntities dBEntities;
+        StudentCF dBEntities;
         List<Student> prevStudents;
         List<Student> currentStudents;
         public MainWindow()
         {
             InitializeComponent();
-
-            dBEntities = new KPZ_Lab03DBEntities();
-            StudentTable.ItemsSource = dBEntities.Student.ToList();
-            prevStudents = dBEntities.Student.ToList();
+            dBEntities = new StudentCF();
+            StudentTable.ItemsSource = dBEntities.Students.ToList();
+            prevStudents = dBEntities.Students.ToList();
         }
 
-        private void DataWindow_Closed(object sender, EventArgs e)
+        private void Window_Closed(object sender, EventArgs e)
         {
             currentStudents = new List<Student>();
-            
-            for(int i=0; i<StudentTable.Items.Count; ++i)
+
+            for (int i = 0; i<StudentTable.Items.Count; ++i)
             {
                 currentStudents.Add(StudentTable.Items[i] as Student);
                 if (currentStudents[i] == null)
@@ -47,10 +45,10 @@ namespace KPZ_Lab03DBF
             }
             //Зрівнювати зміни і редагувати
 
-            for(int i=0; i<prevStudents.Count; ++i)
+            for (int i = 0; i<prevStudents.Count; ++i)
             {
                 bool check = false;
-                for(int j=0; j<currentStudents.Count; ++j)
+                for (int j = 0; j<currentStudents.Count; ++j)
                 {
 
                     if (prevStudents[i].Name == currentStudents[j].Name)
@@ -59,9 +57,9 @@ namespace KPZ_Lab03DBF
                         break;
                     }
                 }
-                if(check == false)
+                if (check == false)
                 {
-                    dBEntities.Student.Remove(prevStudents[i]);
+                    dBEntities.Students.Remove(prevStudents[i]);
                 }
             }
 
@@ -78,7 +76,7 @@ namespace KPZ_Lab03DBF
                 }
                 if (check == false)
                 {
-                    dBEntities.Student.Add(currentStudents[i]);
+                    dBEntities.Students.Add(currentStudents[i]);
                 }
             }
 

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace KPZ_Lab03DBF
+namespace KPZ_Lab03CF
 {
     /// <summary>
     /// Interaction logic for App.xaml
